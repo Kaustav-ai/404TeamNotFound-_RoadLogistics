@@ -42,10 +42,19 @@ ROUTE_WISE is a **Multi-Agent System (MAS)** that acts as a "Digital Co-Pilot" f
 
 ---
 
+Deployment & Architecture
+
+We deployed **Route_Wise** using **Streamlit Community Cloud** to ensure a scalable and accessible demo.
+
+* **Continuous Deployment (CI/CD):** The app is connected directly to our GitHub repository. Every time we push code to the `master` branch, Streamlit Cloud detects the change and automatically re-deploys the latest version.
+* **Security:** Sensitive credentials (API Keys for Groq, Gemini, and Twilio) are not stored in the code. Instead, we use **Streamlit Secrets Management** to inject environment variables securely at runtime.
+* **Tech Stack:** The application runs on a Python 3.10+ environment, installing all dependencies dynamically from `requirements.txt`.
+
 ##  Installation & Setup
 
 ### 1. Clone the Repository
 ```bash
 git clone [https://github.com/Kaustav-ai/404TeamNotFound-_RoadLogistics.git](https://github.com/Kaustav-ai/404TeamNotFound-_RoadLogistics.git)
 cd road-logistics_final
+
 
